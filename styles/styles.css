@@ -101,6 +101,41 @@ footer .cop p {
   color: #FAFAFA;
 }
 
+.downloadcontainer {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 7rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.downloadcontainer .textdownload {
+  display: flex;
+  flex-direction: column;
+}
+.downloadcontainer .textdownload h1 {
+  font-family: "Inter", sans-serif;
+  color: #313131;
+  font-weight: 700;
+  font-size: 85px;
+}
+.downloadcontainer .textdownload p {
+  font-family: "Inter", sans-serif;
+  color: #575757;
+  font-weight: 400;
+  font-size: 18px;
+  max-width: 55ch;
+  line-height: 21.78px;
+  margin: 1.5rem 0 2rem 0;
+}
+.downloadcontainer .textdownload .downloadicons img {
+  cursor: pointer;
+}
+.downloadcontainer .downloadcellimg {
+  width: 60%;
+}
+
 .subscribecontainer {
   max-width: 1300px;
   width: 100%;
