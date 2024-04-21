@@ -18,7 +18,7 @@ footer .footersize {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 3rem 0;
+  padding: 10rem 0;
 }
 footer .footersize .footercontainerinput {
   display: flex;
@@ -99,4 +99,52 @@ footer .cop p {
   font-size: 20px;
   font-weight: 400;
   color: #FAFAFA;
+}
+
+.subscribecontainer {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1E5AFA;
+  border: 1px solid #FAFAFA;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 8rem;
+}
+.subscribecontainer .vectorsubscribe {
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+}
+.subscribecontainer .subscribetext {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.subscribecontainer .subscribetext h1 {
+  font-family: "Inter", sans-serif;
+  color: #FDFDFF;
+  font-size: 48px;
+  font-weight: 600;
+}
+.subscribecontainer .subscribetext p {
+  font-family: "Inter", sans-serif;
+  color: #F5F2FF;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 45ch;
+}
+.subscribecontainer button {
+  font-family: "Inter", sans-serif;
+  color: #FAFAFA;
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 45ch;
+  padding: 1.5rem 5rem;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #FAFAFA;
 }/*# sourceMappingURL=styles.css.map */

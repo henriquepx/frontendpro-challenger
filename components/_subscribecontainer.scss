@@ -1,0 +1,53 @@
+@import '../abstract/variables';
+
+.subscribecontainer {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+
+    background-color: #1E5AFA;
+    border: 1px solid #FAFAFA;
+    border-radius: 10px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 8rem;
+
+    .vectorsubscribe {
+        position: absolute;
+        bottom: 0;
+        right: 25px;
+    }
+    .subscribetext {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        h1 {
+            font-family: $font;
+            color: #FDFDFF;
+            font-size: 48px;
+            font-weight: 600;
+        }
+        p {
+            font-family: $font;
+            color: #F5F2FF;
+            font-size: 18px;
+            font-weight: 400;
+            max-width: 45ch;
+        }
+    }
+    button {
+        font-family: $font;
+        color: #FAFAFA;
+        font-size: 18px;
+        font-weight: 500;
+        max-width: 45ch;
+        padding: 1.5rem 5rem;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 1px solid #FAFAFA;
+    }
+}
