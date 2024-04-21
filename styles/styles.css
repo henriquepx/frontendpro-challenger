@@ -10,4 +10,93 @@
   list-style: none;
   text-decoration: none;
   line-height: 1.4;
+}
+
+footer .footersize {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+footer .footersize .footercontainerinput {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footersize .footercontainerinput h2 {
+  font-family: "Inter", sans-serif;
+  color: #313131;
+  font-size: 32px;
+  font-weight: 700;
+}
+footer .footersize .footercontainerinput p {
+  font-family: "Inter", sans-serif;
+  color: #575757;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 35ch;
+}
+footer .footersize .footercontainerinput .inputregister {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2rem;
+}
+footer .footersize .footercontainerinput .inputregister input {
+  font-family: "Inter", sans-serif;
+  color: #575757;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #FAFAFA;
+  border: 1px solid #E7EBEE;
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+}
+footer .footersize .footercontainerinput .inputregister button {
+  font-family: "Inter", sans-serif;
+  color: #011037;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #011037;
+  border-radius: 5px;
+  padding: 0.7rem 1.5rem;
+}
+footer .footersize .footercontaineroptions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .footersize .footercontaineroptions h2 {
+  font-family: "Inter", sans-serif;
+  color: #2E2E2E;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+footer .footersize .footercontaineroptions nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footersize .footercontaineroptions nav ul li a {
+  font-family: "Inter", sans-serif;
+  color: #575757;
+  font-size: 18px;
+  font-weight: 400;
+}
+footer .cop {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: #000F37;
+}
+footer .cop p {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FAFAFA;
 }/*# sourceMappingURL=styles.css.map */

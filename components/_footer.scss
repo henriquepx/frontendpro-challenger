@@ -1,0 +1,102 @@
+@import '../abstract/variables';
+
+footer {
+    .footersize {
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+
+        padding: 3rem 0;
+        .footercontainerinput {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h2 {
+                font-family: $font;
+                color: #313131;
+                font-size: 32px;
+                font-weight: 700;
+            }
+            p {
+                font-family: $font;
+                color: #575757;
+                font-size: 16px;
+                font-weight: 400;
+                max-width: 35ch;
+            }
+            .inputregister {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-top: 2rem;
+                input {
+                    font-family: $font;
+                    color: #575757;
+                    font-size: 14px;
+                    font-weight: 400;
+
+                    background-color: #FAFAFA;
+                    border: 1px solid #E7EBEE;
+
+                    border-radius: 5px;
+                    padding: .7rem 1rem;
+                }
+                button {
+                    font-family: $font;
+                    color: #011037;
+                    font-size: 14px;
+                    font-weight: 400;
+                    border: 1px solid #011037;
+                    border-radius: 5px;
+                    padding: .7rem 1.5rem;
+                }
+            }
+        }
+        .footercontaineroptions {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            h2 {
+                font-family: $font;
+                color: #2E2E2E;
+                font-size: 24px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            nav {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    li {
+                        a {
+                            font-family: $font;
+                            color:#575757;
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .cop {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        background-color: #000F37;
+        p {
+            font-family: $font;
+            font-size: 20px;
+            font-weight: 400;
+            color: #FAFAFA;
+        } 
+    }
+}
