@@ -13,6 +13,186 @@
   line-height: 1.4;
 }
 
+.testimonials {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials h1 {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  color: #313131;
+  font-weight: 700;
+  font-size: 85px;
+}
+.testimonials .testimonialdesc {
+  text-align: center;
+  color: #575757;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  max-width: 60ch;
+  margin: 2rem 0 4rem 0;
+}
+.testimonials .testimonialcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.testimonials .testimonialcontainer .testimonial {
+  background-color: #FAFAFA;
+  border: 1px solid #E7EBEE;
+  padding: 3rem 2.5rem;
+  z-index: 200;
+  border-radius: 10px;
+}
+.testimonials .testimonialcontainer .testimonial p {
+  max-width: 55ch;
+  font-family: "Inter", sans-serif;
+  line-height: 30px;
+  color: #5F7285;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+.testimonials .testimonialcontainer .testimonial .profiletestimonial {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.testimonials .testimonialcontainer .testimonial .profiletestimonial h2 {
+  color: #1B263D;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.testimonials .testimonialcontainer .testimonial .profiletestimonial h3 {
+  color: #9C9EA3;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.faq {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+}
+.faq h1 {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  color: #313131;
+  font-weight: 700;
+  font-size: 85px;
+  margin-bottom: 3rem;
+}
+.faq .questioncontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.faq .question {
+  padding: 1rem 3rem;
+  border: 1px solid #E7EBEE;
+  background-color: #FAFAFA;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  cursor: pointer;
+}
+.faq .question h3 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Inter", sans-serif;
+  color: #313131;
+  font-size: 18px;
+}
+.faq .question h3::before {
+  content: "+";
+  font-size: 3rem;
+  font-weight: 300;
+}
+.faq .question .answer {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  max-width: 33ch;
+  padding: 1rem 0;
+  font-family: "Inter", sans-serif;
+  color: #313131;
+  font-weight: 400;
+  font-size: 16px;
+}
+.faq .question .answer.active {
+  display: block;
+  max-height: 300px;
+  animation: fadeIn 0.5s ease;
+  animation-fill-mode: forwards;
+}
+.faq .question.active h3::before {
+  content: "−";
+  color: red;
+  font-weight: 400;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.downloadcontainer {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 7rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.downloadcontainer .textdownload {
+  display: flex;
+  flex-direction: column;
+}
+.downloadcontainer .textdownload h1 {
+  font-family: "Inter", sans-serif;
+  color: #313131;
+  font-weight: 700;
+  font-size: 85px;
+}
+.downloadcontainer .textdownload p {
+  font-family: "Inter", sans-serif;
+  color: #575757;
+  font-weight: 400;
+  font-size: 18px;
+  max-width: 55ch;
+  line-height: 21.78px;
+  margin: 1.5rem 0 2rem 0;
+}
+.downloadcontainer .textdownload .downloadicons img {
+  cursor: pointer;
+}
+.downloadcontainer .downloadcellimg {
+  width: 60%;
+}
+
 footer .footersize {
   max-width: 1300px;
   width: 100%;
@@ -102,118 +282,6 @@ footer .cop p {
   color: #FAFAFA;
 }
 
-.downloadcontainer {
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 7rem 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.downloadcontainer .textdownload {
-  display: flex;
-  flex-direction: column;
-}
-.downloadcontainer .textdownload h1 {
-  font-family: "Inter", sans-serif;
-  color: #313131;
-  font-weight: 700;
-  font-size: 85px;
-}
-.downloadcontainer .textdownload p {
-  font-family: "Inter", sans-serif;
-  color: #575757;
-  font-weight: 400;
-  font-size: 18px;
-  max-width: 55ch;
-  line-height: 21.78px;
-  margin: 1.5rem 0 2rem 0;
-}
-.downloadcontainer .textdownload .downloadicons img {
-  cursor: pointer;
-}
-.downloadcontainer .downloadcellimg {
-  width: 60%;
-}
-
-.faq {
-  max-width: 900px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 5rem 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.faq h1 {
-  font-family: "Inter", sans-serif;
-  text-align: center;
-  color: #313131;
-  font-weight: 700;
-  font-size: 85px;
-  margin-bottom: 3rem;
-}
-.faq .questioncontainer {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.faq .question {
-  padding: 1rem 3rem;
-  border: 1px solid #E7EBEE;
-  background-color: #FAFAFA;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  cursor: pointer;
-}
-.faq .question h3 {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-family: "Inter", sans-serif;
-  color: #313131;
-  font-size: 18px;
-}
-.faq .question h3::before {
-  content: "+";
-  font-size: 3rem;
-  font-weight: 300;
-}
-.faq .question .answer {
-  display: none;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  max-width: 33ch;
-  padding: 1rem 0;
-  font-family: "Inter", sans-serif;
-  color: #313131;
-  font-weight: 400;
-  font-size: 16px;
-}
-.faq .question .answer.active {
-  display: block;
-  max-height: 300px;
-  animation: fadeIn 0.5s ease;
-  animation-fill-mode: forwards;
-}
-.faq .question.active h3::before {
-  content: "−";
-  color: red;
-  font-weight: 700;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .subscribecontainer {
   max-width: 1300px;
   width: 100%;
@@ -260,4 +328,17 @@ footer .cop p {
   background-color: transparent;
   border-radius: 5px;
   border: 1px solid #FAFAFA;
+}
+
+.vectorblue {
+  position: absolute;
+  left: 0;
+  top: 500px;
+}
+
+.vectorline {
+  position: absolute;
+  right: 0;
+  top: 700px;
+  z-index: 1;
 }/*# sourceMappingURL=styles.css.map */

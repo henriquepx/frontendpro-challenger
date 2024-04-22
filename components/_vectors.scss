@@ -1,0 +1,14 @@
+@import '../abstract/variables';
+
+.vectorblue {
+    position: absolute;
+    left: 0;
+    top: 500px;
+}
+
+.vectorline {
+    position: absolute;
+    right: 0;
+    top: 700px;
+    z-index: 1;
+}
