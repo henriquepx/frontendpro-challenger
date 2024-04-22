@@ -1,0 +1,80 @@
+@import '../abstract/variables';
+
+.about {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-family: $font;
+        text-align: center;
+        color: #313131;
+        font-weight: 700;
+        font-size: 85px;
+        margin-bottom: 3.5rem;
+    }
+    .advicesabout {
+        display: flex;
+        justify-content: space-between;
+        gap: 200px;
+        align-items: center;
+        .photoadvice {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .bgadvice {
+                position: absolute;
+                bottom: 70px;
+                display: block;
+                width: 550px;
+                height: 352px;
+                background-color: #1E5AFA;
+                z-index: 150;
+                border-radius: 10px;
+            }
+            img {
+                position: relative;
+                z-index: 220;
+            }
+        }
+        .textadviceabout {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            h2 {
+                font-family: $font;
+                color: #000F37;
+                font-weight: 600;
+                line-height: 46px;
+                font-size: 46px;
+            }
+            p {
+                font-family: $font;
+                color: #575757;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 32px;
+                max-width: 35ch;
+            }
+            button {
+                background-color: transparent;
+                border: 1px solid #000F37;
+                border-radius: 5px;
+                font-family: $font;
+                font-weight: 500;
+                font-size: 18px;
+                padding: 1rem 2rem;
+                margin-right: auto;
+                cursor: pointer;
+                &:hover {
+                    background-color: #000F37;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
