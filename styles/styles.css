@@ -51,6 +51,10 @@
   z-index: 150;
   border-radius: 10px;
 }
+.about .advicesabout .photoadvice .temperatureimg {
+  max-width: 329px;
+  width: 100%;
+}
 .about .advicesabout .photoadvice img {
   position: relative;
   z-index: 220;
