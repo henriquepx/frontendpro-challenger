@@ -1,9 +1,7 @@
 @import '../abstract/variables';
 
 .testimonials {
-    max-width: 1500px;
-    width: 100%;
-    margin: 0 auto;
+    @include maxWidth;
 
     display: flex;
     flex-direction: column;

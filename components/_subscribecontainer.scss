@@ -1,9 +1,7 @@
 @import '../abstract/variables';
 
 .subscribecontainer {
-    max-width: 1300px;
-    width: 100%;
-    margin: 0 auto;
+    @include maxWidth;
 
     background-color: #1E5AFA;
     border: 1px solid #FAFAFA;

@@ -1,9 +1,7 @@
 @import '../abstract/variables';
 
 .clients {
-    max-width: 1300px;
-    width: 100%;
-    margin: 0 auto;
+    @include maxWidth;
 
     display: flex;
     flex-direction: column;

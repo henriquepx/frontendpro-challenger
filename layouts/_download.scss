@@ -1,9 +1,7 @@
 @import '../abstract/variables';
 
 .downloadcontainer {
-    max-width: 1300px;
-    width: 100%;
-    margin: 0 auto;
+    @include maxWidth;
 
     padding: 7rem 1rem;
 

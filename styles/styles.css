@@ -17,13 +17,15 @@ header {
   background-color: #1E5AFA;
 }
 header .headersize {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   padding: 1.2rem;
+  z-index: 600;
   display: flex;
   justify-content: space-between;
-  z-index: 300;
+  z-index: 100;
+  position: relative;
 }
 header .headersize nav ul {
   display: flex;
@@ -34,12 +36,15 @@ header .headersize nav ul li a {
   font-weight: 400;
   font-size: 18px;
   color: #FAFAFA;
+  z-index: 700;
+  cursor: pointer;
 }
 header .headersize h1 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
   color: #FAFAFA;
+  margin-right: 10rem;
 }
 header .headersize .forms {
   display: flex;
@@ -68,6 +73,7 @@ main {
   justify-items: center;
   align-items: center;
   position: relative;
+  padding: 3rem 0;
   gap: 50px;
   width: 100%;
   background-color: #1E5AFA;
@@ -80,17 +86,16 @@ main h1 {
   color: #FAFAFA;
 }
 main .bgmain {
-  z-index: 50;
+  z-index: 400;
 }
 main .separatebgcolors {
   position: absolute;
   bottom: 0;
   display: block;
   width: 100%;
-  height: 420px;
+  height: 470px;
   background-color: #ffffff;
   z-index: 10;
-  border-radius: 10px;
 }
 main p {
   font-family: "Inter", sans-serif;
@@ -99,6 +104,7 @@ main p {
   color: #FAFAFA;
   max-width: 66ch;
   text-align: center;
+  z-index: 300;
 }
 main .downloadicons {
   z-index: 50;
@@ -111,7 +117,7 @@ main .downloadicons img {
 }
 
 .about {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -194,7 +200,7 @@ main .downloadicons img {
 }
 
 .clients {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -227,7 +233,7 @@ main .downloadicons img {
 }
 
 .testimonials {
-  max-width: 1500px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -301,7 +307,7 @@ main .downloadicons img {
 }
 
 .faq {
-  max-width: 900px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   padding: 5rem 1rem;
@@ -380,7 +386,7 @@ main .downloadicons img {
   }
 }
 .downloadcontainer {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   padding: 7rem 1rem;
@@ -415,7 +421,7 @@ main .downloadicons img {
 }
 
 footer .footersize {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -504,7 +510,7 @@ footer .cop p {
 }
 
 .subscribecontainer {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   background-color: #1E5AFA;
@@ -557,9 +563,58 @@ footer .cop p {
   top: 4400px;
 }
 
+.containertostyles {
+  position: relative;
+}
+
+.bgfundo {
+  position: absolute;
+  z-index: 10;
+  left: 23%;
+}
+
+.vectormainline {
+  position: absolute;
+  right: 0;
+  top: 900px;
+  z-index: 300;
+}
+
+.vectorheader {
+  position: absolute;
+  z-index: 400;
+  top: 0;
+  right: 0;
+}
+
 .vectorline {
   position: absolute;
   right: 0;
-  top: 3700px;
+  top: 5200px;
   z-index: 1;
+}
+
+.midiassociais {
+  position: absolute;
+  left: 100px;
+  bottom: 560px;
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.vectorscroll {
+  position: absolute;
+  right: 0;
+  bottom: 450px;
+  z-index: 800;
+}
+
+.vectorscrolldown {
+  position: absolute;
+  right: 100px;
+  bottom: 510px;
+  z-index: 850;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
