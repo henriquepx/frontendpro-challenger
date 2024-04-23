@@ -1,0 +1,49 @@
+@import '../abstract/variables';
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    gap: 50px;
+    width: 100%;
+    background-color: #1E5AFA;
+    h1 {
+        font-family: $font;
+        font-weight: 800;
+        font-size: 85px;
+        line-height: 85px;
+        color: #FAFAFA;
+    }
+    .bgmain {
+        z-index: 50;
+    }
+    .separatebgcolors {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 420px;
+        background-color: #ffffff;
+        z-index: 10;
+        border-radius: 10px;
+    }
+    p {
+        font-family: $font;
+        font-weight: 400;
+        font-size: 18px; 
+        color: #FAFAFA;
+        max-width: 66ch;
+        text-align: center;
+    }
+    .downloadicons {
+        z-index: 50;
+        margin: 3rem 0;
+        display: flex;
+        gap: 40px;
+        img {
+            cursor: pointer;
+        }
+    }
+}
