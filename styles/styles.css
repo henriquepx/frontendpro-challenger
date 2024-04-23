@@ -13,6 +13,56 @@
   line-height: 1.4;
 }
 
+header {
+  background-color: #1E5AFA;
+}
+header .headersize {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 300;
+}
+header .headersize nav ul {
+  display: flex;
+  gap: 30px;
+}
+header .headersize nav ul li a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FAFAFA;
+}
+header .headersize h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #FAFAFA;
+}
+header .headersize .forms {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .headersize .forms a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #FAFAFA;
+}
+header .headersize .forms .signupheader {
+  padding: 0.7rem 2.2rem;
+  background-color: #FFFFFF;
+  color: #011037;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
 .about {
   max-width: 1300px;
   width: 100%;
