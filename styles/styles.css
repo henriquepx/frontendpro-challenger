@@ -129,7 +129,7 @@
 }
 
 .testimonials {
-  max-width: 1300px;
+  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -192,6 +192,14 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 12px;
+}
+.testimonials .arrows {
+  display: flex;
+  gap: 20px;
+  margin: 3rem 0;
+}
+.testimonials .arrows img {
+  cursor: pointer;
 }
 
 .faq {
@@ -448,12 +456,12 @@ footer .cop p {
 .vectorblue {
   position: absolute;
   left: 0;
-  top: 500px;
+  top: 4400px;
 }
 
 .vectorline {
   position: absolute;
   right: 0;
-  top: 700px;
+  top: 3700px;
   z-index: 1;
 }/*# sourceMappingURL=styles.css.map */

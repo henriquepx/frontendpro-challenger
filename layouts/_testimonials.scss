@@ -1,7 +1,7 @@
 @import '../abstract/variables';
 
 .testimonials {
-    max-width: 1300px;
+    max-width: 1500px;
     width: 100%;
     margin: 0 auto;
 
@@ -63,6 +63,15 @@
                     font-size: 12px;
                 }
             }
+        }
+    }
+
+    .arrows {
+        display: flex;
+        gap: 20px;
+        margin: 3rem 0;
+        img {
+            cursor: pointer;
         }
     }
 }
