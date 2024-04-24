@@ -922,6 +922,11 @@ footer .cop p {
     display: none;
   }
 }
+@media (max-width: 400px) {
+  .menucontenthamburger {
+    width: 100%;
+  }
+}
 .menucontenthamburger .headercontent {
   display: flex;
   width: 100%;
@@ -980,6 +985,10 @@ footer .cop p {
   border-radius: 5px;
   width: 100%;
   background-color: transparent;
+  border: 1px solid transparent;
+}
+.menucontenthamburger nav ul li:hover {
+  border: 1px solid black;
 }
 .menucontenthamburger nav ul li a {
   font-family: "Inter", sans-serif;
@@ -989,6 +998,7 @@ footer .cop p {
 }
 .menucontenthamburger nav ul li.active {
   background-color: #ffffff;
+  border: 1px solid #fff;
 }
 .menucontenthamburger nav ul li.active a {
   color: #000000;
@@ -997,8 +1007,10 @@ footer .cop p {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   width: 100%;
-  animation: slideOut 0.5s forwards;
+  position: absolute;
+  bottom: 40px;
 }
 
 .menucontenthamburger.active {
@@ -1014,11 +1026,6 @@ footer .cop p {
 .menucontenthamburger.closing {
   display: flex;
   animation: slideOut 0.5s forwards;
-}
-@media (min-width: 800px) {
-  .menucontenthamburger.closing {
-    display: none;
-  }
 }
 
 @keyframes slideIn {

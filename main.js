@@ -32,9 +32,11 @@ const closeMenu = document.querySelector('.closehamburgermenu');
 
 hamburgerMenu.addEventListener('click', function() {
     menuContent.classList.add('active');
+    document.body.style.overflow = 'hidden';
 });
 
 closeMenu.addEventListener('click', function() {
     menuContent.classList.remove('active');
     menuContent.classList.add('closing');
+    document.body.style.overflow = '';
 });
