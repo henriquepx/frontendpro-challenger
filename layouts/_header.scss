@@ -9,11 +9,12 @@ header {
         z-index: 600;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         z-index: 100;
 
         position: relative;
         nav {
-            @media (max-width: 500px) {
+            @media (max-width: 800px) {
                 display: none;
             }
             ul {
@@ -37,12 +38,15 @@ header {
             font-size: 32px;
             color: #FAFAFA;
             margin-right: 10rem;
+            @media (max-width: 800px) {
+                margin-right: 0rem;
+            }
         }
         .forms {
             display: flex;
             align-items: center;
             gap: 20px;
-            @media (max-width: 500px) {
+            @media (max-width: 800px) {
                 display: none;
             }
             a {
@@ -60,6 +64,33 @@ header {
                 font-size: 18px;
                 border-radius: 5px;
             }
+        }
+        .hamburgermenu {
+            display: none;
+            border-radius: 10px;
+            z-index: 999;
+            margin-right: 2rem;
+            @media (max-width: 800px) {
+                display: block;
+            }
+            span {
+                display: block;
+                cursor: pointer;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto 0px auto;
+                transition: all 0.3s ease-in-out;
+                background-color: #ffffff;
+            }
+        }
+        .hamburgermenu.active span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburgermenu.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburgermenu.active span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
         }
     }
 }
