@@ -105,7 +105,7 @@ main h1 {
 main .bgmain {
   z-index: 400;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   main .bgmain {
     width: 75%;
   }
@@ -145,7 +145,7 @@ main .downloadicons {
   display: flex;
   gap: 40px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   main .downloadicons {
     margin: 0.5rem 0;
     gap: 10px;
@@ -171,7 +171,7 @@ main .downloadicons img {
   align-items: center;
   margin-top: 5rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .about {
     gap: 30px;
   }
@@ -184,7 +184,7 @@ main .downloadicons img {
   font-size: 85px;
   margin-bottom: 3.5rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .about h1 {
     font-size: 60px;
     margin-bottom: 1.5rem;
@@ -197,7 +197,7 @@ main .downloadicons img {
   align-items: center;
   margin-bottom: 2rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .about .advicesabout, .about .flexcol {
     gap: 30px;
   }
@@ -218,7 +218,7 @@ main .downloadicons img {
   z-index: 150;
   border-radius: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .about .advicesabout .photoadvice .bgadvice, .about .flexcol .photoadvice .bgadvice {
     width: 200px;
     height: 152px;
@@ -229,7 +229,7 @@ main .downloadicons img {
   max-width: 329px;
   width: 100%;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .about .advicesabout .photoadvice .temperatureimg, .about .flexcol .photoadvice .temperatureimg {
     width: 40%;
   }
@@ -244,12 +244,25 @@ main .downloadicons img {
   gap: 30px;
   padding: 0 1.2rem;
 }
+@media (max-width: 800px) {
+  .about .advicesabout .textadviceabout, .about .flexcol .textadviceabout {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 .about .advicesabout .textadviceabout h2, .about .flexcol .textadviceabout h2 {
   font-family: "Inter", sans-serif;
   color: #000F37;
   font-weight: 600;
   line-height: 46px;
   font-size: 46px;
+  max-width: 13ch;
+}
+@media (max-width: 800px) {
+  .about .advicesabout .textadviceabout h2, .about .flexcol .textadviceabout h2 {
+    max-width: 130ch;
+  }
 }
 .about .advicesabout .textadviceabout p, .about .flexcol .textadviceabout p {
   font-family: "Inter", sans-serif;
@@ -259,6 +272,11 @@ main .downloadicons img {
   line-height: 32px;
   max-width: 35ch;
 }
+@media (max-width: 800px) {
+  .about .advicesabout .textadviceabout p, .about .flexcol .textadviceabout p {
+    max-width: 130ch;
+  }
+}
 .about .advicesabout .textadviceabout button, .about .flexcol .textadviceabout button {
   background-color: transparent;
   border: 1px solid #000F37;
@@ -267,19 +285,18 @@ main .downloadicons img {
   font-weight: 500;
   font-size: 18px;
   padding: 1rem 2rem;
-  margin-right: auto;
   cursor: pointer;
 }
 .about .advicesabout .textadviceabout button:hover, .about .flexcol .textadviceabout button:hover {
   background-color: #000F37;
   color: #fff;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .about .advicesabout {
     flex-direction: column;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .about .flexcol {
     flex-direction: column-reverse;
   }
@@ -517,7 +534,7 @@ main .downloadicons img {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .downloadcontainer {
     flex-direction: column-reverse;
     justify-items: center;
@@ -571,12 +588,7 @@ main .downloadicons img {
   }
 }
 .downloadcontainer .downloadcellimg {
-  width: 60%;
-}
-@media (max-width: 500px) {
-  .downloadcontainer .downloadcellimg {
-    width: 50%;
-  }
+  width: 300px;
 }
 
 footer .footersize {
@@ -584,15 +596,10 @@ footer .footersize {
   width: 100%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10rem 0;
-}
-@media (max-width: 500px) {
-  footer .footersize {
-    flex-direction: column;
-    padding: 5rem 1rem;
-    gap: 60px;
-  }
+  padding: 5rem 1.3rem;
+  gap: 40px;
 }
 footer .footersize .footercontainerinput {
   display: flex;
@@ -697,14 +704,13 @@ footer .cop p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 8rem;
+  padding: 5rem;
 }
 @media (max-width: 500px) {
   .subscribecontainer {
     flex-direction: column;
     padding: 3rem 2rem;
     align-items: left;
-    margin-right: auto;
   }
 }
 .subscribecontainer .vectorsubscribe {
@@ -752,7 +758,9 @@ footer .cop p {
 .vectorblue {
   position: absolute;
   left: 0;
-  top: 4400px;
+  top: 3900px;
+  z-index: 3;
+  width: 120px;
 }
 @media (max-width: 500px) {
   .vectorblue {
@@ -810,7 +818,7 @@ footer .cop p {
   flex-direction: column;
   gap: 35px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .midiassociais {
     display: none;
   }
@@ -822,7 +830,7 @@ footer .cop p {
   bottom: 450px;
   z-index: 800;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .vectorscroll {
     display: none;
   }
@@ -835,7 +843,7 @@ footer .cop p {
   z-index: 850;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .vectorscrolldown {
     display: none;
   }

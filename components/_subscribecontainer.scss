@@ -12,12 +12,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem 8rem;
+    padding: 5rem;
     @media (max-width: 500px) {
         flex-direction: column;
         padding: 3rem 2rem;
         align-items: left;
-        margin-right: auto;
     }
 
     .vectorsubscribe {

@@ -24,7 +24,7 @@ main {
     }
     .bgmain {
         z-index: 400;
-        @media (max-width: 500px) {
+        @media (max-width: 800px) {
            width: 75%;
         }
     }
@@ -58,7 +58,7 @@ main {
         margin: 3rem 0;
         display: flex;
         gap: 40px;
-        @media (max-width: 500px) {
+        @media (max-width: 800px) {
             margin: .5rem 0;
             gap: 10px;
             justify-content: center;

@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 500px) {
+    @media (max-width: 900px) {
         flex-direction: column-reverse;
         justify-items: center;
         align-items: center;
@@ -57,9 +57,6 @@
         }
     }
     .downloadcellimg {
-        width: 60%;
-        @media (max-width: 500px) {
-            width: 50%;
-        }
+        width: 300px;
     }
 }
