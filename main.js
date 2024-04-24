@@ -11,3 +11,30 @@ questions.forEach(question => {
         icon.classList.toggle('fa-minus');
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollDownBtn = document.getElementById("scrollDownBtn");
+
+    scrollDownBtn.addEventListener("click", function() {
+        const scrollDistance = window.innerHeight * 1.4;
+
+        window.scrollTo({
+            top: scrollDistance,
+            behavior: "smooth"
+        });
+    });
+});
+
+const hamburgerMenu = document.querySelector('.hamburgermenumobile');
+const menuContent = document.querySelector('.menucontenthamburger');
+const closeMenu = document.querySelector('.closehamburgermenu');
+
+hamburgerMenu.addEventListener('click', function() {
+    menuContent.classList.add('active');
+});
+
+closeMenu.addEventListener('click', function() {
+    menuContent.classList.remove('active');
+    menuContent.classList.add('closing');
+});
