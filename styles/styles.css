@@ -27,6 +27,11 @@ header .headersize {
   z-index: 100;
   position: relative;
 }
+@media (max-width: 500px) {
+  header .headersize nav {
+    display: none;
+  }
+}
 header .headersize nav ul {
   display: flex;
   gap: 30px;
@@ -50,6 +55,11 @@ header .headersize .forms {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+@media (max-width: 500px) {
+  header .headersize .forms {
+    display: none;
+  }
 }
 header .headersize .forms a {
   font-family: "Inter", sans-serif;
@@ -85,8 +95,20 @@ main h1 {
   line-height: 85px;
   color: #FAFAFA;
 }
+@media (max-width: 500px) {
+  main h1 {
+    font-size: 50px;
+    text-align: center;
+    line-height: 44px;
+  }
+}
 main .bgmain {
   z-index: 400;
+}
+@media (max-width: 500px) {
+  main .bgmain {
+    width: 75%;
+  }
 }
 main .separatebgcolors {
   position: absolute;
@@ -97,6 +119,11 @@ main .separatebgcolors {
   background-color: #ffffff;
   z-index: 10;
 }
+@media (max-width: 500px) {
+  main .separatebgcolors {
+    height: 270px;
+  }
+}
 main p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -106,14 +133,33 @@ main p {
   text-align: center;
   z-index: 300;
 }
+@media (max-width: 500px) {
+  main p {
+    max-width: 36ch;
+    padding: 0 1rem;
+  }
+}
 main .downloadicons {
   z-index: 50;
   margin: 3rem 0;
   display: flex;
   gap: 40px;
 }
+@media (max-width: 500px) {
+  main .downloadicons {
+    margin: 0.5rem 0;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
 main .downloadicons img {
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  main .downloadicons img {
+    width: 40%;
+  }
 }
 
 .about {
@@ -125,6 +171,11 @@ main .downloadicons img {
   align-items: center;
   margin-top: 5rem;
 }
+@media (max-width: 500px) {
+  .about {
+    gap: 30px;
+  }
+}
 .about h1 {
   font-family: "Inter", sans-serif;
   text-align: center;
@@ -133,19 +184,31 @@ main .downloadicons img {
   font-size: 85px;
   margin-bottom: 3.5rem;
 }
-.about .advicesabout {
+@media (max-width: 500px) {
+  .about h1 {
+    font-size: 60px;
+    margin-bottom: 1.5rem;
+  }
+}
+.about .advicesabout, .about .flexcol {
   display: flex;
   justify-content: space-between;
   gap: 200px;
   align-items: center;
+  margin-bottom: 2rem;
 }
-.about .advicesabout .photoadvice {
+@media (max-width: 500px) {
+  .about .advicesabout, .about .flexcol {
+    gap: 30px;
+  }
+}
+.about .advicesabout .photoadvice, .about .flexcol .photoadvice {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about .advicesabout .photoadvice .bgadvice {
+.about .advicesabout .photoadvice .bgadvice, .about .flexcol .photoadvice .bgadvice {
   position: absolute;
   bottom: 70px;
   display: block;
@@ -155,27 +218,40 @@ main .downloadicons img {
   z-index: 150;
   border-radius: 10px;
 }
-.about .advicesabout .photoadvice .temperatureimg {
+@media (max-width: 500px) {
+  .about .advicesabout .photoadvice .bgadvice, .about .flexcol .photoadvice .bgadvice {
+    width: 200px;
+    height: 152px;
+    bottom: 40px;
+  }
+}
+.about .advicesabout .photoadvice .temperatureimg, .about .flexcol .photoadvice .temperatureimg {
   max-width: 329px;
   width: 100%;
 }
-.about .advicesabout .photoadvice img {
+@media (max-width: 500px) {
+  .about .advicesabout .photoadvice .temperatureimg, .about .flexcol .photoadvice .temperatureimg {
+    width: 40%;
+  }
+}
+.about .advicesabout .photoadvice img, .about .flexcol .photoadvice img {
   position: relative;
   z-index: 220;
 }
-.about .advicesabout .textadviceabout {
+.about .advicesabout .textadviceabout, .about .flexcol .textadviceabout {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 0 1.2rem;
 }
-.about .advicesabout .textadviceabout h2 {
+.about .advicesabout .textadviceabout h2, .about .flexcol .textadviceabout h2 {
   font-family: "Inter", sans-serif;
   color: #000F37;
   font-weight: 600;
   line-height: 46px;
   font-size: 46px;
 }
-.about .advicesabout .textadviceabout p {
+.about .advicesabout .textadviceabout p, .about .flexcol .textadviceabout p {
   font-family: "Inter", sans-serif;
   color: #575757;
   font-weight: 400;
@@ -183,7 +259,7 @@ main .downloadicons img {
   line-height: 32px;
   max-width: 35ch;
 }
-.about .advicesabout .textadviceabout button {
+.about .advicesabout .textadviceabout button, .about .flexcol .textadviceabout button {
   background-color: transparent;
   border: 1px solid #000F37;
   border-radius: 5px;
@@ -194,9 +270,19 @@ main .downloadicons img {
   margin-right: auto;
   cursor: pointer;
 }
-.about .advicesabout .textadviceabout button:hover {
+.about .advicesabout .textadviceabout button:hover, .about .flexcol .textadviceabout button:hover {
   background-color: #000F37;
   color: #fff;
+}
+@media (max-width: 500px) {
+  .about .advicesabout {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .about .flexcol {
+    flex-direction: column-reverse;
+  }
 }
 
 .clients {
@@ -215,6 +301,11 @@ main .downloadicons img {
   font-weight: 700;
   font-size: 85px;
 }
+@media (max-width: 500px) {
+  .clients h1 {
+    font-size: 54px;
+  }
+}
 .clients p {
   text-align: center;
   color: #575757;
@@ -224,12 +315,29 @@ main .downloadicons img {
   max-width: 60ch;
   margin: 1rem 0 4rem 0;
 }
+@media (max-width: 500px) {
+  .clients p {
+    padding: 0 1.2rem;
+  }
+}
 .clients .containerclients {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 .clients .containerclients img {
   width: 300px;
+}
+@media (min-width: 300px) and (max-width: 430px) {
+  .clients .containerclients img {
+    width: 170px;
+  }
+}
+@media (min-width: 440px) and (max-width: 500px) {
+  .clients .containerclients img {
+    width: 210px;
+  }
 }
 
 .testimonials {
@@ -247,6 +355,11 @@ main .downloadicons img {
   font-weight: 700;
   font-size: 85px;
 }
+@media (max-width: 500px) {
+  .testimonials h1 {
+    font-size: 50px;
+  }
+}
 .testimonials .testimonialdesc {
   text-align: center;
   color: #575757;
@@ -256,12 +369,22 @@ main .downloadicons img {
   max-width: 60ch;
   margin: 2rem 0 4rem 0;
 }
+@media (max-width: 500px) {
+  .testimonials .testimonialdesc {
+    padding: 0 1.2rem;
+  }
+}
 .testimonials .testimonialcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
+}
+@media (max-width: 500px) {
+  .testimonials .testimonialcontainer {
+    padding: 0 1.2rem;
+  }
 }
 .testimonials .testimonialcontainer .testimonial {
   background-color: #FAFAFA;
@@ -394,6 +517,14 @@ main .downloadicons img {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .downloadcontainer {
+    flex-direction: column-reverse;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
 .downloadcontainer .textdownload {
   display: flex;
   flex-direction: column;
@@ -404,6 +535,11 @@ main .downloadicons img {
   font-weight: 700;
   font-size: 85px;
 }
+@media (max-width: 500px) {
+  .downloadcontainer .textdownload h1 {
+    font-size: 43px;
+  }
+}
 .downloadcontainer .textdownload p {
   font-family: "Inter", sans-serif;
   color: #575757;
@@ -413,11 +549,34 @@ main .downloadicons img {
   line-height: 21.78px;
   margin: 1.5rem 0 2rem 0;
 }
+@media (max-width: 500px) {
+  .downloadcontainer .textdownload p {
+    margin: 0.5rem 0 1rem 0;
+  }
+}
+@media (max-width: 500px) {
+  .downloadcontainer .textdownload .downloadicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
 .downloadcontainer .textdownload .downloadicons img {
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .downloadcontainer .textdownload .downloadicons img {
+    width: 50%;
+  }
+}
 .downloadcontainer .downloadcellimg {
   width: 60%;
+}
+@media (max-width: 500px) {
+  .downloadcontainer .downloadcellimg {
+    width: 50%;
+  }
 }
 
 footer .footersize {
@@ -427,6 +586,13 @@ footer .footersize {
   display: flex;
   justify-content: space-between;
   padding: 10rem 0;
+}
+@media (max-width: 500px) {
+  footer .footersize {
+    flex-direction: column;
+    padding: 5rem 1rem;
+    gap: 60px;
+  }
 }
 footer .footersize .footercontainerinput {
   display: flex;
@@ -462,6 +628,11 @@ footer .footersize .footercontainerinput .inputregister input {
   border-radius: 5px;
   padding: 0.7rem 1rem;
 }
+@media (max-width: 500px) {
+  footer .footersize .footercontainerinput .inputregister input {
+    padding: 0.7rem 0rem;
+  }
+}
 footer .footersize .footercontainerinput .inputregister button {
   font-family: "Inter", sans-serif;
   color: #011037;
@@ -470,6 +641,7 @@ footer .footersize .footercontainerinput .inputregister button {
   border: 1px solid #011037;
   border-radius: 5px;
   padding: 0.7rem 1.5rem;
+  cursor: pointer;
 }
 footer .footersize .footercontaineroptions {
   display: flex;
@@ -508,6 +680,11 @@ footer .cop p {
   font-weight: 400;
   color: #FAFAFA;
 }
+@media (max-width: 500px) {
+  footer .cop p {
+    font-size: 13px;
+  }
+}
 
 .subscribecontainer {
   max-width: 1400px;
@@ -521,6 +698,14 @@ footer .cop p {
   justify-content: space-between;
   align-items: center;
   padding: 5rem 8rem;
+}
+@media (max-width: 500px) {
+  .subscribecontainer {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    align-items: left;
+    margin-right: auto;
+  }
 }
 .subscribecontainer .vectorsubscribe {
   position: absolute;
@@ -555,12 +740,24 @@ footer .cop p {
   background-color: transparent;
   border-radius: 5px;
   border: 1px solid #FAFAFA;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .subscribecontainer button {
+    margin-right: auto;
+    margin-top: 2rem;
+  }
 }
 
 .vectorblue {
   position: absolute;
   left: 0;
   top: 4400px;
+}
+@media (max-width: 500px) {
+  .vectorblue {
+    display: none;
+  }
 }
 
 .containertostyles {
@@ -572,12 +769,22 @@ footer .cop p {
   z-index: 10;
   left: 23%;
 }
+@media (max-width: 500px) {
+  .bgfundo {
+    display: none;
+  }
+}
 
 .vectormainline {
   position: absolute;
   right: 0;
   top: 900px;
   z-index: 300;
+}
+@media (max-width: 500px) {
+  .vectormainline {
+    display: none;
+  }
 }
 
 .vectorheader {
@@ -603,12 +810,22 @@ footer .cop p {
   flex-direction: column;
   gap: 35px;
 }
+@media (max-width: 500px) {
+  .midiassociais {
+    display: none;
+  }
+}
 
 .vectorscroll {
   position: absolute;
   right: 0;
   bottom: 450px;
   z-index: 800;
+}
+@media (max-width: 500px) {
+  .vectorscroll {
+    display: none;
+  }
 }
 
 .vectorscrolldown {
@@ -617,4 +834,9 @@ footer .cop p {
   bottom: 510px;
   z-index: 850;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .vectorscrolldown {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

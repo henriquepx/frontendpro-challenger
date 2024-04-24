@@ -14,6 +14,9 @@
         color: #313131;
         font-weight: 700;
         font-size: 85px;
+        @media (max-width: 500px) {
+            font-size: 54px;
+        }
     }
     p {
         text-align: center;
@@ -23,12 +26,23 @@
         font-size: 18px;
         max-width: 60ch;
         margin: 1rem 0 4rem 0;
+        @media (max-width: 500px) {
+           padding: 0 1.2rem;
+        }
     }
     .containerclients {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         img {
             width: 300px;
+            @media (min-width: 300px) and (max-width: 430px) {
+                width: 170px;
+            }
+            @media (min-width: 440px) and (max-width: 500px) {
+                width: 210px;
+            }
         }
     }
 }

@@ -16,9 +16,17 @@ main {
         font-size: 85px;
         line-height: 85px;
         color: #FAFAFA;
+        @media (max-width: 500px) {
+            font-size: 50px;
+            text-align: center;
+            line-height: 44px;
+        }
     }
     .bgmain {
         z-index: 400;
+        @media (max-width: 500px) {
+           width: 75%;
+        }
     }
     .separatebgcolors {
         position: absolute;
@@ -28,6 +36,9 @@ main {
         height: 470px;
         background-color: #ffffff;
         z-index: 10;
+        @media (max-width: 500px) {
+            height: 270px;
+        }
     }
     p {
         font-family: $font;
@@ -37,14 +48,27 @@ main {
         max-width: 66ch;
         text-align: center;
         z-index: 300;
+        @media (max-width: 500px) {
+            max-width: 36ch;
+            padding: 0 1rem;
+        }
     }
     .downloadicons {
         z-index: 50;
         margin: 3rem 0;
         display: flex;
         gap: 40px;
+        @media (max-width: 500px) {
+            margin: .5rem 0;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
         img {
             cursor: pointer;
+            @media (max-width: 500px) {
+               width: 40%;
+            }
         }
     }
 }

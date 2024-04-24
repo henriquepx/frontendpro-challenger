@@ -4,6 +4,9 @@
     position: absolute;
     left: 0;
     top: 4400px;
+    @media (max-width: 500px) {
+        display: none;
+    }
 }
 
 .containertostyles {
@@ -14,6 +17,9 @@
     position: absolute;
     z-index: 10;
     left: 23%;
+    @media (max-width: 500px) {
+        display: none;
+    }
 }
 
 .vectormainline {
@@ -21,6 +27,9 @@
     right: 0;
     top: 900px;
     z-index: 300;
+    @media (max-width: 500px) {
+        display: none;
+    }
 }
 
 .vectorheader {
@@ -45,6 +54,9 @@
     display: flex;
     flex-direction: column;
     gap: 35px;
+    @media (max-width: 500px) {
+        display: none;
+    }
 }
 
 .vectorscroll {
@@ -52,6 +64,9 @@
     right: 0;
     bottom: 450px;
     z-index: 800;
+    @media (max-width: 500px) {
+        display: none;
+    }
 }
 
 .vectorscrolldown {
@@ -60,4 +75,7 @@
     bottom: 510px;
     z-index: 850;
     cursor: pointer;
+    @media (max-width: 500px) {
+        display: none;
+    }
 }

@@ -13,6 +13,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 5rem 8rem;
+    @media (max-width: 500px) {
+        flex-direction: column;
+        padding: 3rem 2rem;
+        align-items: left;
+        margin-right: auto;
+    }
 
     .vectorsubscribe {
         position: absolute;
@@ -47,5 +53,10 @@
         background-color: transparent;
         border-radius: 5px;
         border: 1px solid #FAFAFA;
+        cursor: pointer;
+        @media (max-width: 500px) {
+            margin-right: auto;
+            margin-top: 2rem;
+        }
     }
 }

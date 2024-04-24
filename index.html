@@ -27,15 +27,20 @@
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonial">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <h1>smartHome</h1>
                 <div class="forms">
                     <a href="#">Login</a>
                     <a class="signupheader" href="#">Sign up</a>
+                </div>
+                <div class="hamburgermenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </header>
@@ -66,7 +71,7 @@
     
     <img class="vectormainline" src="./assets/vectormain.png" alt="">
 
-    <section class="about">
+    <section class="about" id="about">
         <h1>About us</h1>
 
         <div class="advicesabout">
@@ -75,13 +80,13 @@
                 <img class="temperatureimg" src="./assets/temperature.png" alt="Celular mostrando a energia">
             </div>
             <div class="textadviceabout">
-                <h2>Smart Home’s  Smart<br> Services</h2>
+                <h2>Smart Home’s  Smart Services</h2>
                 <p>Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought equally musical. Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
                 <button>Learn More</button>
             </div>
         </div>
 
-        <div class="advicesabout">
+        <div class="flexcol">
             <div class="textadviceabout">
                 <h2>What app can do <br>to your Appliences?</h2>
                 <p>Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought equally musical. Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
@@ -89,14 +94,14 @@
             </div>
             <div class="photoadvice">
                 <div class="bgadvice"></div>
-                <img src="./assets/room.png" alt="Celular mostrando a energia">
+                <img class="temperatureimg" src="./assets/room.png" alt="Celular mostrando a energia">
             </div>
         </div>
 
         <div class="advicesabout">
             <div class="photoadvice">
                 <div class="bgadvice"></div>
-                <img src="./assets/energy.png" alt="Celular mostrando a energia">
+                <img class="temperatureimg" src="./assets/energy.png" alt="Celular mostrando a energia">
             </div>
             <div class="textadviceabout">
                 <h2>Control Electric<br> Appliences</h2>
@@ -121,7 +126,7 @@
         </div>
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials" id="testimonial">
         <h1>Testimonials</h1>
         <p class="testimonialdesc">Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
     
@@ -214,7 +219,7 @@
 
     <section class="downloadcontainer">
         <div class="textdownload">
-            <h1>Download <br>App</h1>
+            <h1>Download App</h1>
             <p>Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
             <div class="downloadicons">
                 <img src="/assets/appstore.png" alt="ícone de download do App Store">
@@ -234,7 +239,7 @@
     </div>
 
     <footer>
-        <div class="footersize">   
+        <div class="footersize" id="contact">   
             <div class="footercontainerinput">
                 <h2>smartHome</h2>
                 <p>Automate your entire healthcare hiring, onboarding and compliance with a true technology platform.</p>
