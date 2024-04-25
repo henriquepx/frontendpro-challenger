@@ -38,7 +38,7 @@ hamburgerMenu.addEventListener('click', function() {
 closeMenu.addEventListener('click', function() {
     menuContent.classList.remove('active');
     menuContent.classList.add('closing');
-    document.body.style.overflow = ''; // Mantém overflow hidden durante o fechamento
+    document.body.style.overflow = ''; 
 });
 
 menuContent.addEventListener('animationend', function() {

@@ -908,7 +908,7 @@ footer .cop p {
 .menucontenthamburger {
   position: fixed;
   z-index: 999;
-  width: 450px;
+  width: 300px;
   height: 100%;
   background-color: #1E5AFA;
   padding: 1.2rem;
@@ -922,7 +922,7 @@ footer .cop p {
     display: none;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .menucontenthamburger {
     width: 100%;
   }
